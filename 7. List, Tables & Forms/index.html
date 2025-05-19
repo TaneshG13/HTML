@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List, Tables and Forms</title>
+</head>
+<body>
+    
+    <!-- List Tag -->
+    <!-- Orderd List -->
+    <ol type="i">
+        <li>Wake up</li>
+        <li>Brush Teeth</li>
+        <li>Take a Shower</li>
+        <li>Have breakfest</li>
+        <li>Go to Work</li>
+    </ol>
+    <hr>
+
+    <!-- Unorderd List -->
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Kiwi</li>
+    </ul>
+    <hr>
+
+    <!-- Table Tag -->
+    <table border="1">
+        <caption>Student Information</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gmail</th>
+            <td rowspan="4">This column spans 4 rows</td>
+        </tr>
+        <tr>
+            <td>Jhon</td>
+            <td>30</td>
+            <td>jhon@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>27</td>
+            <td>jane#gmail.com</td>
+        </tr>
+        <tr>
+            <td colspan="3">This cell Spans 3 columns</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Forms -->
+    <form action="/submit.php" method="post">
+        <p>Text: <input type="text" placeholder="Enter Username"></p>
+        <p>password: <input type="password" placeholder="password"></p>
+        <input type="submit">
+    </form>
+    <hr>
+
+    <form action="/submit.php">
+        <label for="username">Username:</label>
+        <input type="text" name="username" value="Jhon">
+        <br>
+        <label for="dob">DOB: </label>
+        <input type="date" name="dob">
+        <br>
+        <input type="file">
+        <br>
+        <input type="color">
+        <br>
+        Range: <input type="range">
+        <br>
+        Button: <input type="button" value="Click Me">
+        <br>
+        <br>
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" value="Male">
+        <br>
+        <label for="gender">Female</label>
+        <input type="radio"name = "gender" value="Female">
+        <br>
+        <br>
+        <label for="gender">Male</label>
+        <input type="checkbox" name="gender" value="Male">
+        <br>
+        <label for="gender">Female</label>
+        <input type="checkbox"name = "gender" value="Female">
+        <br>
+        <select name="fruits">
+            <option value="Apple">Apple</option>
+            <option value="Mango">Mango</option>
+            <option value="Banana">Banana</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="message">Enter Your message</textarea>
+    </form>
+</body>
+</html>
